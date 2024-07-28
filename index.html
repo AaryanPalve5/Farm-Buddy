@@ -154,6 +154,42 @@
             z-index: 9999;
             display: none; /* Initially hidden */
         }
+
+        /* Enhanced Services Section */
+#services .card {
+    border-radius: 1rem; /* Rounded corners for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#services .card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+#services .card-title {
+    font-size: 1.25rem; /* Adjust title size */
+    margin-bottom: 0.75rem; /* Adjust spacing */
+}
+
+#services .card-text {
+    font-size: 1rem; /* Adjust text size */
+    margin-bottom: 1.25rem; /* Adjust spacing */
+}
+
+.btn-success {
+    background-color: #27ae60; /* Button color */
+    border-color: #27ae60; /* Border color */
+    border-radius: 50px; /* Rounded button */
+    padding: 0.75rem 1.5rem; /* Adjust padding */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.btn-success:hover {
+    background-color: #2ecc71; /* Hover color */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -239,27 +275,45 @@
         </div>
     </main>
     <!-- Services Section -->
-    <div id="services" class="container bg-white py-4 mt-4 text-center">
-        <h2 class="text-success mb-4">Our Services</h2>
-        <div class="row">
-            <div class="col-12 col-md-4 mb-3">
-                <a href="https://farmbuddy-7o6a.onrender.com/farmbuddy" class="btn-custom btn-block">Crop Suitability Analysis</a>
+<div id="services" class="container py-4 mt-4">
+    <h2 class="text-success mb-4 text-center">Our Services</h2>
+    <div class="row">
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card border-success shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-success">Crop Suitability Analysis</h5>
+                    <p class="card-text">Analyze and determine the best crops suited for your land.</p>
+                    <a href="https://farmbuddy-7o6a.onrender.com/farmbuddy" class="btn btn-success btn-block">Learn More</a>
+                </div>
             </div>
-            <div class="col-12 col-md-4 mb-3">
-                <a href="https://farmbuddy-7o6a.onrender.com/crop_home" class="btn-custom btn-block">Go to Crop Recommendation</a>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card border-success shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-success">Crop Recommendation</h5>
+                    <p class="card-text">Get personalized crop recommendations based on your parameters.</p>
+                    <a href="https://farmbuddy-7o6a.onrender.com/crop_home" class="btn btn-success btn-block">Discover More</a>
+                </div>
             </div>
-            <div class="col-12 col-md-4 mb-3">
-                <a href="https://farmbuddy-7o6a.onrender.com/finance" class="btn-custom btn-block">Finance Calc</a>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card border-success shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-success">Finance Calculator</h5>
+                    <p class="card-text">Calculate financial aspects and plan better for your farm.</p>
+                    <a href="https://farmbuddy-7o6a.onrender.com/finance" class="btn btn-success btn-block">Explore Calculator</a>
+                </div>
             </div>
         </div>
     </div>
-</main>
+</div>
+
 
 
     <!-- Footer -->
     <footer class="mt-auto py-3 bg-dark text-white text-center">
         <div class="container">
-            <p class="mb-1">&copy; 2023 Farm Buddy. All rights reserved.</p> 
+            <p class="mb-1"> </p> 
         </div>
     </footer>
 
